@@ -1,0 +1,50 @@
+[
+  {
+    "condition": "25% текущих флагов",
+    "changed_records": 120,
+    "mode": "filtered",
+    "questions": 400,
+    "answerable": 256,
+    "recall5": 0.75,
+    "mrr5": 0.75,
+    "ndcg5": 0.75,
+    "correct_outcome": 0.84,
+    "answer_coverage": 0.48,
+    "correct_refusal": 1.0,
+    "leaks": 0,
+    "routing_p50_ms": 0.33016099951055367,
+    "routing_p95_ms": 1.4408104990252455
+  },
+  {
+    "condition": "50% текущих флагов",
+    "changed_records": 240,
+    "mode": "filtered",
+    "questions": 400,
+    "answerable": 256,
+    "recall5": 0.5,
+    "mrr5": 0.5,
+    "ndcg5": 0.5,
+    "correct_outcome": 0.68,
+    "answer_coverage": 0.32,
+    "correct_refusal": 1.0,
+    "leaks": 0,
+    "routing_p50_ms": 0.22366999928635778,
+    "routing_p95_ms": 0.7382572493042956
+  },
+  {
+    "condition": "100% текущих флагов",
+    "changed_records": 480,
+    "mode": "filtered",
+    "questions": 400,
+    "answerable": 256,
+    "recall5": 0.0,
+    "mrr5": 0.0,
+    "ndcg5": 0.0,
+    "correct_outcome": 0.36,
+    "answer_coverage": 0.0,
+    "correct_refusal": 1.0,
+    "leaks": 0,
+    "routing_p50_ms": 0.2383304990871693,
+    "routing_p95_ms": 0.8618122014922847
+  }
+]
