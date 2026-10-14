@@ -1,0 +1,84 @@
+{
+  "python": "3.12.14",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "runs": [
+    {
+      "command": [
+        "reference_rag.py",
+        "--output",
+        "results"
+      ],
+      "returncode": 0,
+      "seconds": 8.4281,
+      "stdout": "{\n  \"seed\": 20261012,\n  \"documents\": 1440,\n  \"questions_total\": 600,\n  \"tuning_questions\": 200,\n  \"test_questions\": 400,\n  \"tuning_assets\": 20,\n  \"test_assets\": 40,\n  \"selected_fusion_depth\": 10,\n  \"lsa_dimensions\": 64,\n  \"generator\": \"deterministic extractive\",\n  \"corpus\": \"synthetic; no real engineering limits\",\n  \"timing_scope\": \"ranking/filtering/extractive output only; scores precomputed\",\n  \"versions\": {\n    \"python\": \"3.12.14\",\n    \"numpy\": \"2.3.5\",\n    \"scipy\": \"1.17.0\",\n    \"sklearn\": \"1.8.0\"\n  },\n  \"summaries\": [\n    {\n      \"mode\": \"bm25\",\n      \"questions\": 400,\n      \"answerable\": 256,\n      \"recall5\": 1.0,\n      \"mrr5\": 0.6770833333333333,\n      \"ndcg5\": 0.7577007889556064,\n      \"correct_outcome\": 0.32,\n      \"answer_coverage\": 1.0,\n      \"correct_refusal\": 0.0,\n      \"leaks\": 80,\n      \"routing_p50_ms\": 0.030840999897918664,\n      \"routing_p95_ms\": 0.2446274508656635,\n      \"outcome_ci95\": [\n        0.27,\n        0.37\n      ]\n    },\n    {\n      \"mode\": \"lsa\",\n      \"questions\": 400,\n      \"answerable\": 256,\n      \"recall5\": 1.0,\n      \"mrr5\": 1.0,\n      \"ndcg5\": 1.0,\n      \"correct_outcome\": 0.64,\n      \"answer_coverage\": 1.0,\n      \"correct_refusal\": 0.0,\n      \"leaks\": 80,\n      \"routing_p50_ms\": 0.06860600024083396,\n      \"routing_p95_ms\": 0.9270035001463839,\n      \"outcome_ci95\": [\n        0.54,\n        0.74\n      ]\n    },\n    {\n      \"mode\": \"hybrid\",\n      \"questions\": 400,\n      \"answerable\": 256,\n      \"recall5\": 1.0,\n      \"mrr5\": 0.9375,\n      \"ndcg5\": 0.9538662191964322,\n      \"correct_outcome\": 0.56,\n      \"answer_coverage\": 1.0,\n      \"correct_refusal\": 0.0,\n      \"leaks\": 80,\n      \"routing_p50_ms\": 0.1886865002234117,\n      \"routing_p95_ms\": 1.469741501387033,\n      \"outcome_ci95\": [\n        0.465,\n        0.65\n      ]\n    },\n    {\n      \"mode\": \"filtered\",\n      \"questions\": 400,\n      \"answerable\": 256,\n      \"recall5\": 1.0,\n      \"mrr5\": 1.0,\n      \"ndcg5\": 1.0,\n      \"correct_outcome\": 1.0,\n      \"answer_coverage\": 0.64,\n      \"correct_refusal\": 1.0,\n      \"leaks\": 0,\n      \"routing_p50_ms\": 0.33289599923591595,\n      \"routing_p95_ms\": 1.350858598561897,\n      \"outcome_ci95\": [\n        1.0,\n        1.0\n      ]\n    },\n    {\n      \"mode\": \"no_acl\",\n      \"questions\": 400,\n      \"answerable\": 256,\n      \"recall5\": 1.0,\n      \"mrr5\": 1.0,\n      \"ndcg5\": 1.0,\n      \"correct_outcome\": 0.84,\n      \"answer_coverage\": 0.8,\n      \"correct_refusal\": 0.5555555555555556,\n      \"leaks\": 64,\n      \"routing_p50_ms\": 0.22117349999462022,\n      \"routing_p95_ms\": 0.823766950452408,\n      \"outcome_ci95\": [\n        0.74,\n        0.9399999999999998\n      ]\n    },\n    {\n      \"mode\": \"no_version\",\n      \"questions\": 400,\n      \"answerable\": 256,\n      \"recall5\": 1.0,\n      \"mrr5\": 0.9375,\n      \"ndcg5\": 0.9538662191964322,\n      \"correct_outcome\": 0.92,\n      \"answer_coverage\": 0.64,\n      \"correct_refusal\": 1.0,\n      \"leaks\": 0,\n      \"routing_p50_ms\": 0.2198114998464007,\n      \"routing_p95_ms\": 1.1286591495263536,\n      \"outcome_ci95\": [\n        0.89,\n        0.95\n      ]\n    }\n  ],\n  \"documents_sha256\": \"07486d6f621c5e59abf82b5a67c66cc369bde46bd6fa2a310576feb8708bb639\",\n  \"questions_sha256\": \"5199ead28226c66174120c009553ae91343c27588e8c71a759fad8ecad8334b3\",\n  \"sensitivity\": [\n    {\n      \"dimensions\": 16,\n      \"canonicalization\": true,\n      \"mode\": \"filtered\",\n      \"questions\": 400,\n      \"answerable\": 256,\n      \"recall5\": 1.0,\n      \"mrr5\": 0.7604166666666666,\n      \"ndcg5\": 0.8202007889556064,\n      \"correct_outcome\": 0.76,\n      \"answer_coverage\": 0.4,\n      \"correct_refusal\": 1.0,\n      \"leaks\": 0,\n      \"routing_p50_ms\": 0.26583900034893304,\n      \"routing_p95_ms\": 1.303746499434055\n    },\n    {\n      \"dimensions\": 32,\n      \"canonicalization\": true,\n      \"mode\": \"filtered\",\n      \"questions\": 400,\n      \"answerable\": 256,\n      \"recall5\": 1.0,\n      \"mrr5\": 0.9856770833333334,\n      \"ndcg5\": 0.989304138699777,\n      \"correct_outcome\": 0.985,\n      \"answer_coverage\": 0.625,\n      \"correct_refusal\": 1.0,\n      \"leaks\": 0,\n      \"routing_p50_ms\": 0.3068425003220909,\n      \"routing_p95_ms\": 1.563010649897478\n    },\n    {\n      \"dimensions\": 64,\n      \"canonicalization\": true,\n      \"mode\": \"filtered\",\n      \"questions\": 400,\n      \"answerable\": 256,\n      \"recall5\": 1.0,\n      \"mrr5\": 1.0,\n      \"ndcg5\": 1.0,\n      \"correct_outcome\": 1.0,\n      \"answer_coverage\": 0.64,\n      \"correct_refusal\": 1.0,\n      \"leaks\": 0,\n      \"routing_p50_ms\": 0.2858059997379314,\n      \"routing_p95_ms\": 1.418400248621765\n    },\n    {\n      \"dimensions\": 64,\n      \"canonicalization\": false,\n      \"mode\": \"filtered\",\n      \"questions\": 400,\n      \"answerable\": 256,\n      \"recall5\": 1.0,\n      \"mrr5\": 0.7604166666666666,\n      \"ndcg5\": 0.8202007889556064,\n      \"correct_outcome\": 0.76,\n      \"answer_coverage\": 0.4,\n      \"correct_refusal\": 1.0,\n      \"leaks\": 0,\n      \"routing_p50_ms\": 0.2680350007722154,\n      \"routing_p95_ms\": 1.3621111010252205\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "tests.py"
+      ],
+      "returncode": 0,
+      "seconds": 6.425,
+      "stdout": "",
+      "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.287s\n\nOK\n"
+    },
+    {
+      "command": [
+        "metadata_stress.py"
+      ],
+      "returncode": 0,
+      "seconds": 7.4249,
+      "stdout": "[\n  {\n    \"condition\": \"25% текущих флагов\",\n    \"changed_records\": 120,\n    \"mode\": \"filtered\",\n    \"questions\": 400,\n    \"answerable\": 256,\n    \"recall5\": 0.75,\n    \"mrr5\": 0.75,\n    \"ndcg5\": 0.75,\n    \"correct_outcome\": 0.84,\n    \"answer_coverage\": 0.48,\n    \"correct_refusal\": 1.0,\n    \"leaks\": 0,\n    \"routing_p50_ms\": 0.33016099951055367,\n    \"routing_p95_ms\": 1.4408104990252455\n  },\n  {\n    \"condition\": \"50% текущих флагов\",\n    \"changed_records\": 240,\n    \"mode\": \"filtered\",\n    \"questions\": 400,\n    \"answerable\": 256,\n    \"recall5\": 0.5,\n    \"mrr5\": 0.5,\n    \"ndcg5\": 0.5,\n    \"correct_outcome\": 0.68,\n    \"answer_coverage\": 0.32,\n    \"correct_refusal\": 1.0,\n    \"leaks\": 0,\n    \"routing_p50_ms\": 0.22366999928635778,\n    \"routing_p95_ms\": 0.7382572493042956\n  },\n  {\n    \"condition\": \"100% текущих флагов\",\n    \"changed_records\": 480,\n    \"mode\": \"filtered\",\n    \"questions\": 400,\n    \"answerable\": 256,\n    \"recall5\": 0.0,\n    \"mrr5\": 0.0,\n    \"ndcg5\": 0.0,\n    \"correct_outcome\": 0.36,\n    \"answer_coverage\": 0.0,\n    \"correct_refusal\": 1.0,\n    \"leaks\": 0,\n    \"routing_p50_ms\": 0.2383304990871693,\n    \"routing_p95_ms\": 0.8618122014922847\n  }\n]\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "numerical_checks.py"
+      ],
+      "returncode": 0,
+      "seconds": 0.0963,
+      "stdout": "{\n  \"bm25_tf\": {\n    \"1\": 1.0,\n    \"2\": 1.375,\n    \"4\": 1.6923076923076923,\n    \"8\": 1.9130434782608698\n  },\n  \"rrf_advanced\": {\n    \"1\": {\n      \"A\": 0.5,\n      \"B\": 0.3333333333333333,\n      \"V\": 0.3655913978494624\n    },\n    \"10\": {\n      \"A\": 0.09090909090909091,\n      \"B\": 0.13333333333333333,\n      \"V\": 0.10833333333333334\n    },\n    \"60\": {\n      \"A\": 0.01639344262295082,\n      \"B\": 0.03076923076923077,\n      \"V\": 0.02724014336917563\n    }\n  },\n  \"context_required_tokens\": 190,\n  \"context_invalid_tokens\": 200,\n  \"memory_one_bytes\": 802000000,\n  \"memory_two_bytes\": 1604000000,\n  \"precision4\": 0.5,\n  \"recall4\": 0.6666666666666666,\n  \"ap4\": 0.5555555555555555,\n  \"dcg3\": 8.5,\n  \"idcg3\": 8.892789260714373,\n  \"macro_recall\": 0.5555555555555556,\n  \"micro_recall\": 0.2,\n  \"parallel_ms\": 280,\n  \"serial_ms\": 400,\n  \"ndcg3\": 0.95583058934618\n}\n",
+      "stderr": ""
+    }
+  ],
+  "passed": 4,
+  "total": 4,
+  "artifact_checks": {
+    "documents": 1440,
+    "questions": 600,
+    "test_questions": 400,
+    "matching_data_hashes": true,
+    "prediction_counts": {
+      "bm25": {
+        "correct": 128,
+        "leaks": 80
+      },
+      "lsa": {
+        "correct": 256,
+        "leaks": 80
+      },
+      "hybrid": {
+        "correct": 224,
+        "leaks": 80
+      },
+      "filtered": {
+        "correct": 400,
+        "leaks": 0
+      },
+      "no_acl": {
+        "correct": 336,
+        "leaks": 64
+      },
+      "no_version": {
+        "correct": 368,
+        "leaks": 0
+      }
+    },
+    "metadata_flags_changed": [
+      120,
+      240,
+      480
+    ]
+  },
+  "functional_tests_passed": 6
+}
